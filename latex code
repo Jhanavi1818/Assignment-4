@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment 4 } 
+\author{Kummitha Jhanavi}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+% Blocks frame
+\section{Problem}
+\begin{frame}{Problem}
+    \begin{block}{Example 1.2 chapter 1 }
+        We roll two dice and we want to find the probability p that the sum of the numbers that show equals 7
+    \end{block}
+    \end{frame}
+    \section{Definition}
+    \begin{frame}{Definition}
+    \begin{block}{Sample space Definition}
+    Sample space of an experiment or random trial is the set of all possible outcomes or results of that experiment
+    
+    Example: when two dice are rolled possible outcomes are 
+    (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),
+    (2,1)(2,2),(2,3),(2,4),(2,5),(2,6),
+    (3,1),(3,2),(3,3),(3,4),(3,5),(3,6),
+    (4,1),(4,2),(4,3),(4,4),(4,5),(4,6),
+    (5,1),(5,2),(5,3),(5,4),(5,5),(5,6),
+    (6,1),(6,2),(6,3),(6,4),(6,5),(6,6)
+    
+    Therefore total possible outcomes when two dice are rolled is 36
+        
+    \end{block}
+    \end{frame}
+    \section{Solution}
+    \begin{frame}{Solution}
+    \begin{block}{Solution}
+    From the sample space mentioned above the ordered pairs whose sum  digits is 7 are 
+    (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)
+    Number of possible outcomes are 6.
+    
+    
+    \begin{center}
+        Total number of outcomes when two dice are rolled is 36.
+        
+    n(p) = 6 where p is order pairs whose sum is 7
+    \end{center}
+    \begin{center}
+        Let Pr(p) be probability of getting of sum digits as 7
+    \end{center}
+    \begin{center}
+        Pr(p) = $\frac{n(p)}{ Total outcomes}$
+        
+        $\implies$ Pr(p) = $\frac{6}{36}$ = $\frac{1}{6}$
+    \end{center}
+    
+    \end{block}
+        
+    \end{frame}
+        
+
+\end{document}
