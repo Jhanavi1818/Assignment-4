@@ -1,0 +1,8 @@
+import math
+possible_rolls=list(range(1,3))
+print(possible_rolls)
+sample_space = set(product(possible_rolls,repeat=2))
+def has_sum_of_7(otcome):return sum(outcome)==7
+prob= compute_event_probability(has_sum_of_7,sample_space)
+print(f"2 rolls sum to 7 with a probability of {prob}")
+2 rolls sum to 7 with a probability of 0.1666667
